@@ -55,8 +55,8 @@ ul {
 .header {
   background-color: var(--primary-color);
   color: #fff;
-  padding: 1rem 20px;
-  position: sticky; /* Keep nav visible */
+  padding: 0.8rem 1rem;
+  position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -66,13 +66,14 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 .nav__link {
   color: #ecf0f1;
   font-weight: 500;
-  padding: 5px 10px;
+  padding: 5px 8px;
+  font-size: 0.9rem;
 }
 
 .nav__link:hover {
@@ -83,26 +84,26 @@ ul {
 
 /* Main Content */
 .main {
-  flex: 1; /* Pushes footer down */
-  padding-top: 2rem;
+  flex: 1;
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .section {
   background: var(--section-bg);
-  padding: var(--spacing-unit);
+  padding: 1.2rem;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .section__title {
   color: var(--primary-color);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 /* About Section */
@@ -118,14 +119,16 @@ ul {
 }
 
 .about__name {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--primary-color);
+  line-height: 1.2;
 }
 
 .about__role {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--accent-color);
   font-weight: 400;
+  margin-top: 0.5rem;
 }
 
 .about__content {
@@ -136,8 +139,8 @@ ul {
 }
 
 .about__photo {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--accent-color);
@@ -146,19 +149,20 @@ ul {
 
 .about__bio {
   max-width: 800px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* Skills Section */
 .skills__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .skills__subtitle {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: var(--primary-color);
+  font-size: 1.1rem;
 }
 
 .skills__list li {
@@ -167,6 +171,7 @@ ul {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   border-left: 4px solid var(--accent-color);
+  font-size: 0.95rem;
 }
 
 /* Experience & Education */
@@ -186,8 +191,9 @@ ul {
 
 .experience__role,
 .education__degree {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--primary-color);
+  line-height: 1.3;
 }
 
 .experience__company,
@@ -195,6 +201,12 @@ ul {
   font-weight: 600;
   color: #666;
   margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.experience__desc,
+.education__desc {
+  font-size: 0.95rem;
 }
 
 /* Projects */
@@ -217,12 +229,13 @@ ul {
 
 .projects__link {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  word-break: break-word; /* Prevent overflow */
 }
 
 .projects__tech {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #7f8c8d;
   margin-top: 0.2rem;
 }
@@ -231,19 +244,21 @@ ul {
 .code-example pre {
   background: #2d3436;
   color: #dfe6e9;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: var(--border-radius);
   overflow-x: auto;
   font-family: "Consolas", "Monaco", monospace;
   margin-top: 1rem;
+  font-size: 0.85rem;
 }
 
 /* Contact */
 .contact__list li {
   margin-bottom: 0.8rem;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
 }
 
 .contact__label {
@@ -255,8 +270,8 @@ ul {
 .footer {
   background-color: var(--primary-color);
   color: #fff;
-  padding: 2rem 20px;
-  margin-top: auto; /* Push to bottom if content is short */
+  padding: 1.5rem 20px;
+  margin-top: auto;
   text-align: center;
 }
 
@@ -277,16 +292,50 @@ ul {
 }
 
 .footer__logo {
-  height: 30px; /* Adjust as needed */
-  filter: invert(1); /* Make the RS logo white if it's dark text */
+  height: 30px;
+  filter: invert(1);
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments (Desktop) */
 @media (min-width: 768px) {
+  .header {
+    padding: 1rem 20px;
+  }
+
+  .nav__list {
+    gap: 20px;
+  }
+
+  .nav__link {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  .main {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+
+  .section {
+    padding: 2rem;
+  }
+
+  .section__title {
+    font-size: 1.8rem;
+  }
+
   .about {
     flex-direction: row;
     text-align: left;
     gap: 2rem;
+  }
+
+  .about__name {
+    font-size: 2.5rem;
+  }
+
+  .about__role {
+    font-size: 1.2rem;
   }
 
   .about__content {
@@ -294,8 +343,29 @@ ul {
     align-items: flex-start;
   }
 
+  .about__photo {
+    width: 150px;
+    height: 150px;
+  }
+
   .about__bio {
     text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .experience__role,
+  .education__degree {
+    font-size: 1.3rem;
+  }
+
+  .contact__list li {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 
   .footer__content {
