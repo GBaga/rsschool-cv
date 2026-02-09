@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goga Bagauri - CV</title>
+    <link rel="icon" type="image/png" href="icons8-favorite-48.png">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -29,7 +31,7 @@
                 <h2 class="about__role">Aspiring Full-Stack Developer</h2>
             </div>
             <div class="about__content">
-                <img src="https://github.com/GBaga.png" alt="Goga Bagauri's Profile Photo" class="about__photo">
+                <img src="profile-photo.png" alt="Goga Bagauri's Profile Photo" class="about__photo">
                 <p class="about__bio">
                     Aspiring Full-Stack Developer currently focused on building skills in HTML, CSS, JavaScript, React
                     and Next.js.
@@ -95,19 +97,23 @@
             <h2 class="section__title">Projects</h2>
             <ul class="projects__list">
                 <li class="projects__item">
-                    <a href="https://github.com/GBaga/redberry-redseam" class="projects__link"
-                        target="_blank">redberry-redseam</a>
-                    <span class="projects__tech">(HTML/CSS)</span>
+                    <a href="https://github.com/GBaga/Project-30-GeoLab-Final" class="projects__link"
+                        target="_blank">Project-30-GeoLab-Final</a>
+                    <span class="projects__tech">(React/Next.js)</span>
                 </li>
                 <li class="projects__item">
-                    <a href="https://github.com/GBaga/clicon-ecommerce-marketplace" class="projects__link"
-                        target="_blank">clicon-ecommerce-marketplace</a>
+                    <a href="https://github.com/GBaga/Project-33-RedBerry-Momentum" class="projects__link"
+                        target="_blank">Project-33-RedBerry-Momentum</a>
                     <span class="projects__tech">(JavaScript)</span>
                 </li>
                 <li class="projects__item">
-                    <a href="https://github.com/GBaga/Project-34-Puga-github-user-search-app" class="projects__link"
-                        target="_blank">Project-34-Puga-github-user-search-app</a>
-                    <span class="projects__tech">(CSS/JS)</span>
+                    <a href="https://github.com/GBaga/bbgeorgiatravel" class="projects__link"
+                        target="_blank">bbgeorgiatravel</a>
+                    <span class="projects__tech">(Next.js)</span>
+                </li>
+                <li class="projects__item">
+                    <a href="https://github.com/GBaga/kc-legal" class="projects__link" target="_blank">kc-legal</a>
+                    <span class="projects__tech">(Front-End)</span>
                 </li>
             </ul>
         </section>
@@ -136,15 +142,27 @@
 
         <section id="code-example" class="section code-example">
             <h2 class="section__title">Code Example</h2>
-            <p>A simple JavaScript function to calculate the factorial of a number:</p>
-            <pre><code>function factorial(n) {
-                    if (n === 0 || n === 1) {
-                    return 1;
+            <p>How I see the weekend approaching:</p>
+            <pre><code>const isFriday = (day) => {
+                    if (day === 'Friday') {
+                    return "Party time! 🎉";
+                    } else {
+                    return "Keep coding... ☕";
                     }
-                    return n * factorial(n - 1);
-                    }
+                    };
 
-                    console.log(factorial(5)); // Output: 120</code></pre>
+                    const week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+                    week.forEach(day => console.log(`${day}: ${isFriday(day)}`));
+
+                    /* Output:
+                    Monday: Keep coding... ☕
+                    Tuesday: Keep coding... ☕
+                    Wednesday: Keep coding... ☕
+                    Thursday: Keep coding... ☕
+                    Friday: Party time! 🎉
+                    */</code></pre>
+
         </section>
 
         <section id="contact" class="section contact">
@@ -165,7 +183,7 @@
             <a href="https://github.com/GBaga" target="_blank" class="footer__link">GBaga GitHub</a>
             <span class="footer__year">2026</span>
             <a href="https://rs.school/courses/short-track" target="_blank" class="footer__rs-link">
-                <img src="https://rs.school/images/rs_school_js.svg" alt="RS School Logo" class="footer__logo">
+                <img src="rs-logo.png" alt="RS School Logo" class="footer__logo">
             </a>
         </div>
     </footer>
