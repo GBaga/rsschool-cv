@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goga Bagauri - CV</title>
+    <title>Goga Bagauri - Full-Stack Developer</title>
     <link rel="icon" type="image/png" href="icons8-favorite-48.png">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,25 +19,24 @@
     <header class="header">
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                <li><a href="#about" class="nav__link">// about</a></li>
+                <li><a href="#skills" class="nav__link">// skills</a></li>
+                <li><a href="#experience" class="nav__link">// experience</a></li>
+                <li><a href="#projects" class="nav__link">// work</a></li>
+                <li><a href="#education" class="nav__link">// education</a></li>
+                <li><a href="#contact" class="nav__link">// contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
 
-        <section id="about" class="section hero">
-            <div class="hero__photo-wrapper">
-                <img src="profile-photo.png" alt="Goga Bagauri's Profile Photo" class="hero__photo">
-            </div>
-            <div class="hero__text">
-                <h1 class="hero__name">Goga Bagauri</h1>
-                <h2 class="hero__role">Aspiring Full-Stack Developer</h2>
+        <section id="about" class="hero">
+            <p class="hero__greeting">Hi, my name is</p>
+            <h1 class="hero__name">Goga Bagauri<span class="hero__dot">.</span></h1>
+            <h2 class="hero__role">Aspiring Full-Stack Developer</h2>
+            <div class="hero__content">
+                <img src="profile-photo.png" alt="Goga Bagauri Profile Photo" class="hero__photo">
                 <p class="hero__bio">
                     Passionate about crafting clean, responsive, and accessible user interfaces.
                     Currently building skills in HTML, CSS, JavaScript, React and Next.js.
@@ -46,23 +47,25 @@
 
         <section id="skills" class="section">
             <h2 class="section__title">Skills</h2>
-            <div class="skills">
-                <div class="skills__category">
-                    <h3 class="skills__subtitle">Frontend</h3>
-                    <ul class="skills__list">
-                        <li class="skills__tag">HTML5 &amp; CSS3</li>
-                        <li class="skills__tag">JavaScript (ES6+)</li>
-                        <li class="skills__tag">React &amp; Next.js</li>
-                        <li class="skills__tag">SASS &amp; Tailwind CSS</li>
+            <div class="expertise">
+                <div class="expertise__card">
+                    <span class="expertise__icon">&lt;/&gt;</span>
+                    <h3 class="expertise__heading">Frontend Development</h3>
+                    <ul class="expertise__list">
+                        <li>HTML5 &amp; CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React &amp; Next.js</li>
+                        <li>SASS &amp; Tailwind CSS</li>
                     </ul>
                 </div>
-                <div class="skills__category">
-                    <h3 class="skills__subtitle">Tools &amp; Languages</h3>
-                    <ul class="skills__list">
-                        <li class="skills__tag">Git &amp; GitHub</li>
-                        <li class="skills__tag">Power BI &amp; MS Office</li>
-                        <li class="skills__tag">English (B2)</li>
-                        <li class="skills__tag">Georgian (Native)</li>
+                <div class="expertise__card">
+                    <span class="expertise__icon">{ }</span>
+                    <h3 class="expertise__heading">Tools &amp; Languages</h3>
+                    <ul class="expertise__list">
+                        <li>Git &amp; GitHub</li>
+                        <li>Power BI &amp; MS Office</li>
+                        <li>English (B2)</li>
+                        <li>Georgian (Native)</li>
                     </ul>
                 </div>
             </div>
@@ -70,40 +73,53 @@
 
         <section id="experience" class="section">
             <h2 class="section__title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline__item">
-                    <span class="timeline__dot"></span>
-                    <div class="timeline__content">
-                        <h3 class="timeline__role">Advisor</h3>
-                        <p class="timeline__meta">General Prosecutor's Office of Georgia &bull; 07/2025 - Present</p>
+            <div class="exp">
+                <div class="exp__item">
+                    <div class="exp__header">
+                        <h3 class="exp__role">Advisor</h3>
+                        <span class="exp__date">2025 - Present</span>
+                    </div>
+                    <p class="exp__company">General Prosecutor's Office of Georgia</p>
+                </div>
+                <div class="exp__item">
+                    <div class="exp__header">
+                        <h3 class="exp__role">HR Coordinator</h3>
+                        <span class="exp__date">2022 - 2025</span>
+                    </div>
+                    <p class="exp__company">Special Investigation Service</p>
+                    <p class="exp__desc">Developed HR strategy, managed recruitment processes, and coordinated employee
+                        professional development programs.</p>
+                    <div class="exp__tags">
+                        <span class="tag">HR</span>
+                        <span class="tag">Strategy</span>
+                        <span class="tag">Recruitment</span>
                     </div>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__dot"></span>
-                    <div class="timeline__content">
-                        <h3 class="timeline__role">HR Coordinator</h3>
-                        <p class="timeline__meta">Special Investigation Service &bull; 07/2022 - 06/2025</p>
-                        <p class="timeline__desc">Developed HR strategy, managed recruitment processes, and coordinated
-                            employee professional development programs.</p>
+                <div class="exp__item">
+                    <div class="exp__header">
+                        <h3 class="exp__role">Trainer</h3>
+                        <span class="exp__date">2019 - 2022</span>
+                    </div>
+                    <p class="exp__company">Training Center of Justice</p>
+                    <p class="exp__desc">Planned and executed financial, IT, and soft-skills training courses. Managed
+                        trainer recruitment and program evaluation.</p>
+                    <div class="exp__tags">
+                        <span class="tag">Training</span>
+                        <span class="tag">IT</span>
+                        <span class="tag">Management</span>
                     </div>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__dot"></span>
-                    <div class="timeline__content">
-                        <h3 class="timeline__role">Trainer</h3>
-                        <p class="timeline__meta">Training Center of Justice &bull; 12/2019 - 06/2022</p>
-                        <p class="timeline__desc">Planned and executed financial, IT, and soft-skills training courses.
-                            Managed trainer recruitment and program evaluation.</p>
+                <div class="exp__item">
+                    <div class="exp__header">
+                        <h3 class="exp__role">Assistant</h3>
+                        <span class="exp__date">2017 - 2020</span>
                     </div>
-                </div>
-                <div class="timeline__item">
-                    <span class="timeline__dot"></span>
-                    <div class="timeline__content">
-                        <h3 class="timeline__role">Assistant</h3>
-                        <p class="timeline__meta">Legal Training Service, Training Center of Justice &bull; 08/2017 -
-                            12/2020</p>
-                        <p class="timeline__desc">Coordinated large-scale training projects across multiple
-                            municipalities, handling logistics and communication with stakeholders.</p>
+                    <p class="exp__company">Legal Training Service, Training Center of Justice</p>
+                    <p class="exp__desc">Coordinated large-scale training projects across multiple municipalities,
+                        handling logistics and communication.</p>
+                    <div class="exp__tags">
+                        <span class="tag">Coordination</span>
+                        <span class="tag">Logistics</span>
                     </div>
                 </div>
             </div>
@@ -111,31 +127,33 @@
 
         <section id="projects" class="section">
             <h2 class="section__title">Projects</h2>
-            <ul class="projects">
-                <li class="project-card">
-                    <a href="https://github.com/GBaga/Project-30-GeoLab-Final" class="project-card__link"
-                        target="_blank">
-                        <span class="project-card__name">GeoLab Final</span>
-                        <span class="project-card__tech">React / Next.js</span>
+            <ul class="work">
+                <li class="work__item">
+                    <a href="https://github.com/GBaga/Project-30-GeoLab-Final" target="_blank" class="work__link">
+                        <span class="work__name">GeoLab Final</span>
+                        <span class="work__tech">React / Next.js</span>
+                        <span class="work__arrow">&rarr;</span>
                     </a>
                 </li>
-                <li class="project-card">
-                    <a href="https://github.com/GBaga/Project-33-RedBerry-Momentum" class="project-card__link"
-                        target="_blank">
-                        <span class="project-card__name">RedBerry Momentum</span>
-                        <span class="project-card__tech">JavaScript</span>
+                <li class="work__item">
+                    <a href="https://github.com/GBaga/Project-33-RedBerry-Momentum" target="_blank" class="work__link">
+                        <span class="work__name">RedBerry Momentum</span>
+                        <span class="work__tech">JavaScript</span>
+                        <span class="work__arrow">&rarr;</span>
                     </a>
                 </li>
-                <li class="project-card">
-                    <a href="https://github.com/GBaga/bbgeorgiatravel" class="project-card__link" target="_blank">
-                        <span class="project-card__name">BB Georgia Travel</span>
-                        <span class="project-card__tech">Next.js</span>
+                <li class="work__item">
+                    <a href="https://github.com/GBaga/bbgeorgiatravel" target="_blank" class="work__link">
+                        <span class="work__name">BBGeorgiaTravel</span>
+                        <span class="work__tech">Next.js</span>
+                        <span class="work__arrow">&rarr;</span>
                     </a>
                 </li>
-                <li class="project-card">
-                    <a href="https://github.com/GBaga/kc-legal" class="project-card__link" target="_blank">
-                        <span class="project-card__name">KC Legal</span>
-                        <span class="project-card__tech">Front-End</span>
+                <li class="work__item">
+                    <a href="https://github.com/GBaga/kc-legal" target="_blank" class="work__link">
+                        <span class="work__name">KC Legal</span>
+                        <span class="work__tech">Front-End</span>
+                        <span class="work__arrow">&rarr;</span>
                     </a>
                 </li>
             </ul>
@@ -143,69 +161,84 @@
 
         <section id="education" class="section">
             <h2 class="section__title">Education</h2>
-            <div class="timeline">
-                <div class="timeline__item">
-                    <span class="timeline__dot"></span>
-                    <div class="timeline__content">
-                        <h3 class="timeline__role">Frontend &amp; Node.js Development</h3>
-                        <p class="timeline__meta">re:educate &bull; 2025 - 2026</p>
-                        <p class="timeline__desc">Backend 2 (GITA): Node.js, Express, NestJS, MongoDB, PostgreSQL,
-                            Docker, AWS S3, GraphQL, Jest, Swagger.</p>
+            <div class="exp">
+                <div class="exp__item">
+                    <div class="exp__header">
+                        <h3 class="exp__role">Frontend &amp; Node.js Development</h3>
+                        <span class="exp__date">2025 - 2026</span>
+                    </div>
+                    <p class="exp__company">re:educate</p>
+                    <p class="exp__desc">Backend 2 (GITA): Node.js, Express, NestJS, MongoDB, PostgreSQL, Docker, AWS
+                        S3, GraphQL, Jest, Swagger.</p>
+                    <div class="exp__tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">NestJS</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">GraphQL</span>
                     </div>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__dot"></span>
-                    <div class="timeline__content">
-                        <h3 class="timeline__role">Frontend Web Development</h3>
-                        <p class="timeline__meta">GeoLab &bull; 2024 - 2025</p>
+                <div class="exp__item">
+                    <div class="exp__header">
+                        <h3 class="exp__role">Frontend Web Development</h3>
+                        <span class="exp__date">2024 - 2025</span>
                     </div>
+                    <p class="exp__company">GeoLab</p>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__dot"></span>
-                    <div class="timeline__content">
-                        <h3 class="timeline__role">Master of International Relations</h3>
-                        <p class="timeline__meta">University of Georgia &bull; 09/2014 - 07/2024</p>
+                <div class="exp__item">
+                    <div class="exp__header">
+                        <h3 class="exp__role">Master of International Relations</h3>
+                        <span class="exp__date">2014 - 2024</span>
                     </div>
+                    <p class="exp__company">University of Georgia</p>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__dot"></span>
-                    <div class="timeline__content">
-                        <h3 class="timeline__role">Bachelor of International Relations</h3>
-                        <p class="timeline__meta">Tbilisi State University &bull; 09/2010 - 07/2014</p>
+                <div class="exp__item">
+                    <div class="exp__header">
+                        <h3 class="exp__role">Bachelor of International Relations</h3>
+                        <span class="exp__date">2010 - 2014</span>
                     </div>
+                    <p class="exp__company">Tbilisi State University</p>
                 </div>
             </div>
         </section>
 
         <section id="code-example" class="section">
             <h2 class="section__title">Code Example</h2>
-            <p class="code-intro">How I see the weekend approaching:</p>
-            <pre><code>const isFriday = (day) =&gt; {
-                    if (day === 'Friday') {
-                    return "Party time! &#127881;";
-                    } else {
-                    return "Keep coding... &#9749;";
+            <p class="code-intro">My career path, explained in JavaScript:</p>
+            <pre><code>class Goga {
+                    constructor() {
+                    this.title = "HR Coordinator";
+                    this.coffeeCount = 0;
+                    this.bugs = Infinity;
                     }
-                    };
 
-                    const week = ['Monday', 'Tuesday', 'Wednesday',
-                    'Thursday', 'Friday'];
+                    careerSwitch() {
+                    this.title = "Full-Stack Developer";
+                    this.coffeeCount = 9000;
+                    // bugs stayed the same, but now
+                    // they're called "features"
+                    }
 
-                    week.forEach(day =&gt; {
-                    console.log(`${day}: ${isFriday(day)}`);
-                    });
+                    dailyRoutine() {
+                    while (!this.asleep) {
+                    this.drinkCoffee();
+                    this.code();
+                    this.googleError();
+                    this.code();
+                    // repeat until mass.equals(undefined)
+                    }
+                    }
+                    }
 
-                    /* Output:
-                    Monday: Keep coding... &#9749;
-                    Tuesday: Keep coding... &#9749;
-                    Wednesday: Keep coding... &#9749;
-                    Thursday: Keep coding... &#9749;
-                    Friday: Party time! &#127881;
-                    */</code></pre>
+                    const me = new Goga();
+                    me.careerSwitch();
+                    // HR: "Why did you leave?"
+                    // Me: "CSS vertical centering broke me."</code></pre>
         </section>
+
 
         <section id="contact" class="section">
             <h2 class="section__title">Contact</h2>
+            <p class="contact-intro">Available for new opportunities</p>
             <ul class="contact">
                 <li class="contact__item">
                     <span class="contact__label">Email</span>
@@ -234,8 +267,8 @@
 
     <footer class="footer">
         <div class="footer__inner">
-            <a href="https://github.com/GBaga" target="_blank" class="footer__github">GBaga</a>
-            <span class="footer__year">2026</span>
+            <a href="https://github.com/GBaga" target="_blank" class="footer__link">GBaga</a>
+            <span class="footer__copy">&copy; 2026</span>
             <a href="https://rs.school/courses/short-track" target="_blank" class="footer__rs">
                 <img src="rs-logo.png" alt="RS School Logo" class="footer__logo">
             </a>
