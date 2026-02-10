@@ -204,35 +204,22 @@
         <section id="code-example" class="section">
             <h2 class="section__title">Code Example</h2>
             <p class="code-intro">My career path, explained in JavaScript:</p>
-            <pre><code>class Goga {
+            <pre><code>class CareerJourney {
                     constructor() {
-                    this.title = "HR Coordinator";
-                    this.coffeeCount = 0;
-                    this.bugs = Infinity;
+                    this.role = "HR Coordinator";
+                    this.skills = ["Management", "Communication"];
                     }
 
-                    careerSwitch() {
-                    this.title = "Full-Stack Developer";
-                    this.coffeeCount = 9000;
-                    // bugs stayed the same, but now
-                    // they're called "features"
-                    }
-
-                    dailyRoutine() {
-                    while (!this.asleep) {
-                    this.drinkCoffee();
-                    this.code();
-                    this.googleError();
-                    this.code();
-                    // repeat until mass.equals(undefined)
-                    }
+                    pivot() {
+                    this.role = "Full-Stack Developer";
+                    this.skills.push("React", "Node.js", "Clean Code");
+                    this.passion = Infinity;
                     }
                     }
 
-                    const me = new Goga();
-                    me.careerSwitch();
-                    // HR: "Why did you leave?"
-                    // Me: "CSS vertical centering broke me."</code></pre>
+                    const goga = new CareerJourney();
+                    goga.pivot();
+                    console.log(goga.role); // "Full-Stack Developer"</code></pre>
         </section>
 
 
